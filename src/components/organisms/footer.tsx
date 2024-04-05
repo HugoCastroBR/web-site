@@ -4,7 +4,8 @@ import CustomText from '../atoms/customText'
 import {
   IconBrandGithub,
   IconBrandLinkedin,
-  IconBrandWhatsapp
+  IconBrandWhatsapp,
+  IconMail
 } from  '@tabler/icons-react'
 
 const Footer = () => {
@@ -14,7 +15,7 @@ const Footer = () => {
     bg-primaryBg transition-all
     '
     style={{
-      height: '120px',
+      height: '150px',
     }}
     >
       <div
@@ -62,6 +63,24 @@ const Footer = () => {
           />
           <CustomText
             text='+55 (32) 9 9952-3931'
+            className='text-xs'
+            color='white'
+          />
+        </a>
+        <a
+          className='
+          flex flex-row gap-4
+          justify-center items-center
+          cursor-pointer
+          href="mailto:hugocastrohc@outlook.com"
+          '
+        >
+          <IconMail
+            size={28}
+            color='white'
+          />
+          <CustomText
+            text='hugocastrohc@outlook.com'
             className='text-xs'
             color='white'
           />

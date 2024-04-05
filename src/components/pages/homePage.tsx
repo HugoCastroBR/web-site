@@ -5,6 +5,7 @@ import AboutSection from '../organisms/aboutSection'
 import ExpSection from '../organisms/expSection'
 import ProjectsSection from '../organisms/projectsSection'
 import Footer from '../organisms/footer'
+import FloatMessage from '../molecules/floatMessage'
 function HomePage() {
   return (
     <main
@@ -15,6 +16,7 @@ function HomePage() {
       '
     >
       <Header />
+      <FloatMessage />
       <IntroSection />
       <AboutSection />
       <ExpSection />
