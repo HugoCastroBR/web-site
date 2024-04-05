@@ -17,7 +17,7 @@ const IntroInfo = () => {
         className='
         text-xl
         '
-        styles={{ marginBottom: -8 }}
+        styles={{ marginBottom: -6 }}
       />
       <CustomText
         text='HUGO CASTRO'
@@ -33,22 +33,33 @@ const IntroInfo = () => {
         className='
         text-2xl
         '
-        styles={{ marginTop: -8 }}
+        styles={{ marginTop: -6 }}
       />
+      <a href="https://www.linkedin.com/in/hugocastrobr/">
       <CustomButton
-      className='
-        hover:transition-all hover:ease-in hover:duration-300
-        hover:bg-primaryBg hover:text-white 
-        text-primaryBg
-        px-6 py-2 -mb-4 mt-4
+        className='
         text-2xl
+        relative group  px-8 pb-1 h-10 bg-primary
+        before:absolute 
+        before:inset-0 
+      before:bg-primaryBg 
+        before:scale-x-0 
+        before:origin-right
+        before:transition
+        before:duration-500
+        hover:before:scale-x-100
+        hover:before:origin-left
+        text-primaryBg
+        hover:text-white
       '
-      type='outline'
-      borderSize={2}
-      rounded={4}
+        type='outline'
+        borderSize={2}
+        rounded={4}
       >
-        CONTACT
+        <span className="relative uppercase text-base transition-all duration-500  ">Contact</span>
+
       </CustomButton>
+      </a>
 
     </div>
   )

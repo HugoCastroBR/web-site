@@ -15,7 +15,7 @@ const ExpSection = () => {
         className="flex flex-col"
       >
         <CustomText
-          text='Freelancer'
+          text='FREELANCER'
           className='text-lg'
           color='#00BA82'
           weight={600}
@@ -54,7 +54,7 @@ const ExpSection = () => {
         className="flex flex-col"
       >
         <CustomText
-          text='Freelancer'
+          text='BACK-END ENGINEER'
           className='text-lg'
           color='#00BA82'
           weight={600}
@@ -191,7 +191,7 @@ const ExpSection = () => {
           }}
         >
           <Stepper.Step
-            label="Freelancer"
+            label="FREELANCER"
             description="10/2023 - Present"
             completedIcon={<IconCalendar size={20} />}
             icon={<IconCalendar size={20} color='white' />}

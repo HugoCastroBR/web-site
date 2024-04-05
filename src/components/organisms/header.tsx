@@ -10,13 +10,13 @@ const Header = () => {
       className='
       fixed
       flex h-6 w-full items-center
-      p-2 px-52 bg-transparent justify-between
-      backdrop-blur-lg  bg-opacity-25
-      bg-primary z-30
+      p-2 px-52 justify-between
+      backdrop-blur-sm bg-primary  bg-opacity-70
+      z-30
       '
     >
       <div
-        className='w-7/12 h-10
+        className='w-8/12 h-10
         flex items-center 
         '
       >
@@ -28,20 +28,11 @@ const Header = () => {
         />
       </div>
       <div
-        className=' w-5/12 h-10
+        className=' w-4/12 h-10
         flex flex-row-reverse items-center  
         justify-between
         '
       >
-        <CustomButton
-        >
-          <CustomText
-            text='CONTACT'
-            className='text-xs'
-            color='#1C1C21'
-            weight={500}
-          />
-        </CustomButton>
         <CustomButton
         >
           <CustomText

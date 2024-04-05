@@ -3,6 +3,8 @@ import Header from '../organisms/header'
 import IntroSection from '../organisms/introSection'
 import AboutSection from '../organisms/aboutSection'
 import ExpSection from '../organisms/expSection'
+import ProjectsSection from '../organisms/projectsSection'
+import Footer from '../organisms/footer'
 function HomePage() {
   return (
     <main
@@ -16,6 +18,8 @@ function HomePage() {
       <IntroSection />
       <AboutSection />
       <ExpSection />
+      <ProjectsSection />
+      <Footer/>
     </main>
   )
 }
