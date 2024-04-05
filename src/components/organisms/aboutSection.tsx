@@ -4,9 +4,10 @@ import CustomText from '../atoms/customText'
 export const AboutSection = () => {
   return (
     <section
+      id='about-section'
       className='
       flex flex-col h-auto w-full 
-      px-52 pt-4 pb-8
+      px-52 pt-6 pb-8 
       '
       style={{
         backgroundColor: 'white'

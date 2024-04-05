@@ -156,9 +156,10 @@ const ExpSection = () => {
 
   return (
     <section className='
-    flex  w-full px-52 pt-4 pb-8
+    flex  w-full px-52 pt-6 pb-8
     bg-primaryBg transition-all
     '
+    id='exp-section'
     style={{
       height: '80vh',
     }}

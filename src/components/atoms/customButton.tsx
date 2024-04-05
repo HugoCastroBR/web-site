@@ -26,7 +26,7 @@ const CustomButton = ({
         onClick={onClick}
         style={{
           borderRadius: rounded || 8,
-          borderWidth: borderSize || 1,
+          borderWidth: borderSize || 0,
           ...styles
         }}
       >

@@ -33,33 +33,45 @@ const Header = () => {
         justify-between
         '
       >
-        <CustomButton
+        <a
+          href='#projects-section'
         >
-          <CustomText
-            text='PROJECTS'
-            className='text-xs'
-            color='#1C1C21'
-            weight={500}
-          />
-        </CustomButton>
-        <CustomButton
+          <CustomButton
+          >
+            <CustomText
+              text='PROJECTS'
+              className='text-xs'
+              color='#1C1C21'
+              weight={500}
+            />
+          </CustomButton>
+        </a>
+        <a
+          href='#exp-section'
         >
-          <CustomText
-            text='EXPERIENCE'
-            className='text-xs'
-            color='#1C1C21'
-            weight={500}
-          />
-        </CustomButton>
-        <CustomButton
+          <CustomButton
+          >
+            <CustomText
+              text='EXPERIENCE'
+              className='text-xs'
+              color='#1C1C21'
+              weight={500}
+            />
+          </CustomButton>
+        </a>
+        <a
+          href='#about-section'
         >
-          <CustomText
-            text='ABOUT'
-            className='text-xs'
-            color='#1C1C21'
-            weight={500}
-          />
-        </CustomButton>
+          <CustomButton
+          >
+            <CustomText
+              text='ABOUT'
+              className='text-xs'
+              color='#1C1C21'
+              weight={500}
+            />
+          </CustomButton>
+        </a>
       </div>
     </header>
   )

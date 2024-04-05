@@ -16,6 +16,7 @@ const IntroPicture = () => {
           mb-8 -mr-6 border-2 border-white
           w-72 h-72 overflow-x-visible z-10
           hover:border-2 
+          
           '
         >
 
@@ -42,8 +43,8 @@ const IntroPicture = () => {
           <Image
             src="/images/myself.png"
             alt="Picture of the author"
-            width={300}
-            height={300}
+            width={1000}
+            height={1000}
           />
         </div>
 

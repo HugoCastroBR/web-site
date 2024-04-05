@@ -35,7 +35,7 @@ const IntroInfo = () => {
         '
         styles={{ marginTop: -6 }}
       />
-      <a href="https://www.linkedin.com/in/hugocastrobr/">
+      <a href="https://api.whatsapp.com/send?phone=553299523931&text=Ol%C3%A1%20Hugo.">
       <CustomButton
         className='
         text-2xl

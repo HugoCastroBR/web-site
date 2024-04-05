@@ -7,6 +7,7 @@ import CustomButton from '../atoms/customButton';
 const ProjectsSection = () => {
   return (
     <section
+      id='projects-section'
       className='
     flex flex-col w-full px-52 pt-4 pb-8
     bg-white justify-center items-center
@@ -107,7 +108,7 @@ const ProjectsSection = () => {
               text-sm font-medium
             '
             type='outline'
-            borderSize={1}
+            borderSize={0}
             rounded={4}
           >
             View Project
