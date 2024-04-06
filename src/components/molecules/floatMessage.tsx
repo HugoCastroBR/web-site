@@ -75,8 +75,10 @@ const FloatMessage = () => {
         />
         <CustomButton
           onClick={() => {
-            sendWhatsAppMessage(generateWhatsAppMessage(message))
-            setIsVisible(false)
+            if (typeof window !== "undefined") {
+              sendWhatsAppMessage(generateWhatsAppMessage(message))
+              setIsVisible(false)
+            }
           }}
           type='outline'
           className='

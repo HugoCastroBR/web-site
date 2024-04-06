@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  'basePath': '/hugo-web',
+  'basePath': '/web-site',
 };
 
 export default nextConfig;

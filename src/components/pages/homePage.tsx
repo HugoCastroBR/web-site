@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Header from '../organisms/header'
 import IntroSection from '../organisms/introSection'

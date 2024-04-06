@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import CustomText from '../atoms/customText'
 const IntroPicture = () => {
   return (
     <div

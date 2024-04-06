@@ -154,19 +154,21 @@ const ExpSection = () => {
     }
   }
 
-  useEffect(() => {
-    window.addEventListener('resize', () => {
-      setScreenWidth(window.innerWidth);
-    })
+  const [screenWidth, setScreenWidth] = useState(0);
 
-    return () => {
-      window.removeEventListener('resize', () => {
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const handleResize = () => {
         setScreenWidth(window.innerWidth);
-      })
+      };
+
+      window.addEventListener('resize', handleResize);
+
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
     }
   }, []);
-
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   return (
     <section className='
