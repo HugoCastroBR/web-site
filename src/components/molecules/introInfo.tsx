@@ -1,21 +1,44 @@
 import React from 'react'
 import CustomText from '../atoms/customText'
 import CustomButton from '../atoms/customButton'
+import Image from 'next/image'
 
 const IntroInfo = () => {
   return (
     <div
       className='
       flex flex-col h-full w-full
-      justify-center items-start
+      justify-center md:items-start
+      items-center md:mb-32 mb-0
 
       '
     >
+      <div
+        className='flex  w-36 h-36 rounded-full overflow-hidden
+        md:invisible visible
+        '
+      >
+          <div
+            className='
+            flex bg-transparent w-44 h-44 rounded-full overflow-hidden
+            -mt-8
+            '
+          >
+            <Image
+              src="/images/myself.png"
+              alt="Picture of the author"
+              width={1000}
+              height={1200}
+              className='px-1 -ml-1'
+            />
+          </div>
+      </div>
       <CustomText
         text='Hi, my name is'
         weight={300}
         className='
-        text-xl
+        lg:text-xl
+        text-sm
         '
         styles={{ marginBottom: -6 }}
       />
@@ -24,14 +47,16 @@ const IntroInfo = () => {
         weight={600}
         className='
         -ml-0.5
-        text-4xl
+        lg:text-4xl
+        text-3xl
         '
       />
       <CustomText
         text='I AM A FULL STACK DEVELOPER'
         weight={400}
         className='
-        text-2xl
+        lg:text-lg
+        text-sm
         '
         styles={{ marginTop: -6 }}
       />

@@ -7,7 +7,11 @@ export const AboutSection = () => {
       id='about-section'
       className='
       flex flex-col h-auto w-full 
-      px-52 pt-6 pb-8 
+      pt-6 pb-8 
+      lg:px-52
+      md:px-32
+      sm:px-16
+      px-4
       '
       style={{
         backgroundColor: 'white'
@@ -25,6 +29,7 @@ export const AboutSection = () => {
 
       <CustomText
         weight={400}
+        className='text-sm'
         text={`
         My name is Hugo Castro, and I'm a full stack developer based in Juiz de Fora, Minas Gerais, Brazil.
         With a solid background in software engineering and a passion for problem-solving, I've played essential
@@ -33,7 +38,7 @@ export const AboutSection = () => {
       `}
       />
       <CustomText
-        className='mt-4'
+        className='mt-4 text-sm'
         weight={400}
         text={`
         Throughout my career, I've been dedicated to delivering high-quality software solutions, leveraging a wide range of technologies.
@@ -42,7 +47,7 @@ export const AboutSection = () => {
       `}
       />
       <CustomText
-        className='mt-4'
+        className='mt-4 text-sm'
         weight={400}
         text={`
         My journey in software development began during my studies at School,
@@ -51,7 +56,7 @@ export const AboutSection = () => {
       `}
       />
       <CustomText
-        className='mt-4'
+        className='mt-4 text-sm'
         weight={400}
         text={`
         In addition to technical expertise, I'm fluent in Portuguese and i also have an advanced English, enabling me to collaborate effectively
@@ -60,7 +65,7 @@ export const AboutSection = () => {
       `}
       />
       <CustomText
-        className='mt-4'
+        className='mt-4 text-sm'
         weight={400}
         text={`
         Feel free to reach out to me via email or connect with me on LinkedIn or GitHub. 

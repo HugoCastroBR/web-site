@@ -9,7 +9,12 @@ const ProjectsSection = () => {
     <section
       id='projects-section'
       className='
-    flex flex-col w-full px-52 pt-4 pb-8
+    flex flex-col w-full 
+    lg:px-52
+    md:px-32
+    sm:px-16
+    px-4
+    pt-4 pb-8
     bg-white justify-center items-center
     '
     >
@@ -20,12 +25,12 @@ const ProjectsSection = () => {
       />
       <div
         className='
-        flex  w-full
+        flex lg:flex-row  flex-col-reverse  w-full
         min-h-72 justify-between
         '
       >
         <div className='
-        flex flex-col w-6/12 py-6
+        flex flex-col lg:w-6/12 w-full py-6
       
         
         ' >
@@ -118,7 +123,7 @@ const ProjectsSection = () => {
 
 
         </div>
-        <div className='flex justify-center items-center w-5/12 '>
+        <div className='flex justify-center items-center lg:w-6/12 w-full  '>
           <Image
             alt=''
             src='/images/AlaskaWebOS.png'

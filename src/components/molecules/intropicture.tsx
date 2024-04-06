@@ -14,7 +14,9 @@ const IntroPicture = () => {
           flex flex-col absolute
           justify-end items-center
           mb-8 -mr-6 border-2 border-white
-          w-72 h-72 overflow-x-visible z-10
+          lg:w-72 lg:h-72 h-56 w-56
+          
+          overflow-x-visible z-10
           hover:border-2 
           
           '
@@ -26,7 +28,7 @@ const IntroPicture = () => {
           flex flex-col absolute
           justify-end items-center
           mt-2 border-t-2 border-primaryBg
-          w-72 h-72 overflow-x-visible z-0
+          lg:w-72 lg:h-72 h-56 w-56 overflow-x-visible z-0
           '
         >
 
@@ -36,7 +38,7 @@ const IntroPicture = () => {
           flex flex-col 
           justify-end items-center
           mt-2 border-2 border-primaryBg
-          w-72 h-72 overflow-x-visible z-20
+          lg:w-72 lg:h-72 h-56 w-56 overflow-x-visible z-20
           border-t-0
           '
         >

@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react';
 import { Stepper, rem } from '@mantine/core';
 import {
@@ -12,7 +12,7 @@ const ExpSection = () => {
   const FreelancerExp = () => {
     return (
       <div
-        className="flex flex-col"
+        className="flex flex-col overflow-y-auto lg:pb-0 pb-28"
       >
         <CustomText
           text='FREELANCER'
@@ -51,7 +51,7 @@ const ExpSection = () => {
   const HarmoExp = () => {
     return (
       <div
-        className="flex flex-col"
+        className="flex flex-col overflow-y-auto lg:pb-0 pb-28"
       >
         <CustomText
           text='BACK-END ENGINEER'
@@ -75,7 +75,7 @@ const ExpSection = () => {
   const QRPointExp = () => {
     return (
       <div
-        className='flex flex-col'
+        className='flex flex-col overflow-y-auto lg:pb-0 pb-28'
       >
         <CustomText
           text='FULL STACK SOFTWARE ENGINEER'
@@ -98,7 +98,7 @@ const ExpSection = () => {
 
   const LubyExp = () => {
     return (
-      <div className='flex flex-col'>
+      <div className='flex flex-col overflow-y-auto lg:pb-0 pb-28'>
         <CustomText
           text='JUNIOR SOFTWARE DEVELOPER'
           className='text-lg'
@@ -154,17 +154,101 @@ const ExpSection = () => {
     }
   }
 
+  useEffect(() => {
+    window.addEventListener('resize', () => {
+      setScreenWidth(window.innerWidth);
+    })
+
+    return () => {
+      window.removeEventListener('resize', () => {
+        setScreenWidth(window.innerWidth);
+      })
+    }
+  }, []);
+
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
   return (
     <section className='
-    flex  w-full px-52 pt-6 pb-8
+    flex  w-full pt-6 pb-8
     bg-primaryBg transition-all
+    lg:px-52
+    md:px-32
+    sm:px-16
+    px-4
+    lg:h-2/3
+    h-96
     '
     id='exp-section'
-    style={{
-      height: '80vh',
-    }}
     >
-      <div className='flex flex-col h-full w-3/12 '>
+      {screenWidth < 1100 ? 
+      <div className='flex flex-col'>
+      <div className='flex flex-col h-full w-full  '>
+      <CustomText
+        text='EXPERIENCE'
+        className='text-lg mb-4'
+        color='#00BA82'
+        weight={600}
+      />
+      <Stepper
+        active={active}
+        onStepClick={setActive}
+        orientation={'horizontal'}
+        size='xs'
+        iconSize={24}
+        color='#00BA82'
+        styles={{
+
+          stepIcon: {
+            backgroundColor: '#00BA82',
+            borderColor: '#00BA82',
+          },
+          stepLabel: {
+            color: '#00BA82',
+          },
+          stepDescription: {
+            color: 'lightgray',
+          },
+        }}
+      >
+        <Stepper.Step
+          label="FREELANCER"
+          description="10/2023 - Present"
+          completedIcon={<IconCalendar size={16} />}
+          icon={<IconCalendar size={16} color='white' />}
+        />
+        <Stepper.Step
+          label="Harmo"
+          description="03/2023 - 09/2023"
+          completedIcon={<IconCalendar size={16} />}
+          icon={<IconCalendar size={16} color='white' />}
+          name='email'
+
+        />
+        <Stepper.Step
+          label="QR Point"
+          description="12/2022 - 03/2023"
+          completedIcon={<IconCalendar size={16} />}
+          icon={<IconCalendar size={16} color='white' />}
+          name='email'
+
+        />
+        <Stepper.Step
+          label="Luby Software"
+          description="03/2021 - 12/2022"
+          completedIcon={<IconCalendar size={16} />}
+          icon={<IconCalendar size={16} color='white' />}
+          name='email'
+        />
+      </Stepper>
+    </div>
+    <div className='flex flex-col h-full w-full mt-2 '>
+      {renderActiveStep()}
+    </div>
+      </div>
+      :
+      <>
+        <div className='flex flex-col h-full w-3/12 '>
         <CustomText
           text='EXPERIENCE'
           className='text-lg mb-4'
@@ -174,7 +258,7 @@ const ExpSection = () => {
         <Stepper
           active={active}
           onStepClick={setActive}
-          orientation="vertical"
+          orientation={'vertical'}
           size='sm'
           color='#00BA82'
           styles={{
@@ -225,6 +309,8 @@ const ExpSection = () => {
       <div className='flex flex-col h-full w-9/12 '>
         {renderActiveStep()}
       </div>
+      </>
+      }
     </section>
   );
 }

@@ -16,7 +16,7 @@ function HomePage() {
       '
     >
       <Header />
-      <FloatMessage />
+      {/* <FloatMessage /> */}
       <IntroSection />
       <AboutSection />
       <ExpSection />

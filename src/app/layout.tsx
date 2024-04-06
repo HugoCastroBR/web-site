@@ -7,8 +7,11 @@ import '@mantine/core/styles.css';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Home | Hugo Web",
+  title: "Hugo Castro",
   description: "Full stack web development",
+  keywords: ["hugo", "web", "development", "full stack", "nextjs"],
+  creator: "Hugo Castro",
+
 };
 
 export default function RootLayout({

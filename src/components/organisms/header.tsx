@@ -8,29 +8,38 @@ const Header = () => {
   return (
     <header
       className='
-      fixed
+      relative
+      md:fixed
       flex h-6 w-full items-center
-      p-2 px-52 justify-between
-      backdrop-blur-sm bg-primary  bg-opacity-70
+      p-2  justify-between
+      backdrop-blur-sm bg-primary  bg-opacity-100
       z-30
+      lg:px-52
+      md:px-32
+      sm:px-16
+      md:bg-opacity-70
+      px-0
       '
     >
       <div
-        className='w-8/12 h-10
+        className='w-0 lg:w-8/12 md:w-7/12  md:visible invisible h-10
         flex items-center 
         '
       >
         <CustomText
           text='HUGO CASTRO'
-          className='text-sm'
+          className='text-xs
+          lg:text-sm
+          '
           color='#1C1C21'
           weight={600}
         />
       </div>
       <div
-        className=' w-4/12 h-10
+        className=' h-10
         flex flex-row-reverse items-center  
-        justify-between
+        justify-evenly
+        md:justify-between lg:w-5/12 md-5/12  w-screen
         '
       >
         <a

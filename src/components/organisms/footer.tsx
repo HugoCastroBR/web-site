@@ -11,11 +11,16 @@ import {
 const Footer = () => {
   return (
     <section className='
-    flex  w-full px-52 pt-2
+    flex  w-full pt-2
     bg-primaryBg transition-all
+    lg:px-52
+    md:px-32
+    sm:px-16
+    px-4
+    pb-2
     '
     style={{
-      height: '150px',
+      height: '160px',
     }}
     >
       <div
